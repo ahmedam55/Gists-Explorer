@@ -1,0 +1,33 @@
+.gistItem {
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding: 8px;
+
+  &:hover {
+    border-color: #0366d6;
+  }
+
+  &Description,
+  &Filename {
+    margin-bottom: 0;
+  }
+
+  &Description {
+    font-size: 12px;
+    color: #586069;
+  }
+
+  &Filename {
+    font-weight: 600;
+    color: #0366d6;
+  }
+
+  &Link {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}

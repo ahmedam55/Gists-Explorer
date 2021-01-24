@@ -1,0 +1,61 @@
+@keyframes appear {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.forksList {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+
+  animation: appear 0.3s ease-in forwards;
+  margin-top: 8px;
+}
+
+.forkItem {
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  padding: 8px;
+
+  &:hover {
+    border-color: #0366d6;
+  }
+
+  & + & {
+    margin-top: 8px;
+  }
+
+  &Image {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+  }
+
+  &Name {
+    font-size: 14px;
+    padding-left: 10px;
+    font-weight: 600;
+    color: #0366d6;
+  }
+
+  &Link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    font-size: 0;
+    color: transparent;
+    line-height: 0;
+  }
+}

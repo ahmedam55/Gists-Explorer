@@ -1,0 +1,27 @@
+.searchInput {
+  min-height: 28px;
+
+  display: table-cell;
+  width: 100%;
+  padding-top: 0;
+  padding-bottom: 0;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  border: 1px solid #e1e4e8;
+  box-shadow: none;
+
+  line-height: 20px;
+  padding: 5px 12px;
+  vertical-align: middle;
+  border-radius: 6px;
+  outline: none;
+
+  max-width: 250px;
+  margin-bottom: 16px;
+
+  &:focus,
+  &:hover {
+    border-color: #0366d6;
+  }
+}
